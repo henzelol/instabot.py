@@ -13,12 +13,12 @@ from instabot import InstaBot
 from unfollow_protocol import unfollow_protocol
 
 bot = InstaBot(
-    login="",
-    password="",
+    login="solidareasy",
+    password="91donatteit",
     like_per_day=1000,
     comments_per_day=0,
     tag_list=['humanitario', 'voluntariado', 'apae','sejaumvoluntario','trabalhovoluntario','graacc'],
-    tag_blacklist=['follow4follow', 'likeporlike','imoveis','venda','bomdia','boatarde','boanoite','deus', 'sextou'],
+    tag_blacklist=['follow4follow', 'likeporlike','imoveis','venda','bomdia','boatarde','boanoite','deus', 'sextou','girl','ferias','empresario','play','drink','deputado','instamoda','moda','style','instafashion','vintagestyle','vintage','Casa'],
     user_blacklist={},
     max_like_for_one_tag=10,
     follow_per_day=300,
@@ -30,7 +30,7 @@ bot = InstaBot(
     proxy='',
     # List of list of words, each of which will be used to generate comment
     # For example: "This shot feels wow!"
-    comment_list=[["Legal! ","Wow"],["😁","😉","😋","😜"]],
+    comment_list=["😁","😉","😜","😗","😍","❤️"],
     # Use unwanted_username_list to block usernames containing a string
     ## Will do partial matches; i.e. 'mozart' will block 'legend_mozart'
     ### 'free_followers' will be blocked because it contains 'free'
@@ -102,4 +102,4 @@ while True:
         unfollow_protocol(bot)
 
     else:
-print("Wrong mode!")
+        print("Wrong mode!")
